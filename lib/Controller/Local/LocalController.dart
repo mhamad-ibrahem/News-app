@@ -49,7 +49,7 @@ class LocalizationController extends GetxController {
         country = 'eg';
       }
     }
-    // country = sharedprefLanguage == 'ar' ? country = 'eg' : country = 'us';
+ 
     saveTheme = services.sharedPreferences.getBool('dark') ?? false;
     switchTheme = saveTheme!;
     super.onInit();

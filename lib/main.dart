@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      
       theme: localController.saveTheme==false ||localController.saveTheme==  null?Themes.lightTheme:Themes.darkTheme,
        locale:localController.language,
        debugShowCheckedModeBanner: false,
