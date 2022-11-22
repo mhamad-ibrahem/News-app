@@ -59,7 +59,7 @@ class OptionScreen extends StatelessWidget {
           //Switch to dark mode
 
           SwitchListTile(
-            value: controller.switchTheme,
+            value: controller.switchTheme!,
             onChanged: (val) {
               controller.changeTheme(val);
             },

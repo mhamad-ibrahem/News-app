@@ -10,6 +10,8 @@ class NewsController extends GetxController {
   //fetch data from api
   Future<List<Article>?> getData(String categories) async {
     String? country = controller.country;
+    print('====================================');
+    print(country);
     var response = await http.get(Uri.parse(
         'https://newsapi.org/v2/top-headlines?country=$country&category=$categories&apiKey=d34ddceb6d0a41e095e7b8dad1b3aebb'));
     if (response.statusCode == 200) {
